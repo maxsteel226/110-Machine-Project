@@ -60,8 +60,13 @@
             height: 150px;
             padding: 50px;
         }
-        :hover.About div {
-            background-color: grey;
+        .word{
+            color: white;
+            text-decoration: none; /* Remove underline from links */
+        }
+        .word:hover {
+            color: burlywood;
+            cursor: pointer; /* Change cursor to pointer on hover */
         }
   
     </style> 
@@ -98,10 +103,9 @@
    </div>
    <div class = "footer">
         <div>
-            footer
-        </div>
-        <div class="About">
-            About
+           <a class="word" href="#">About</a><br>
+            <a class="word" href="#">Locations</a><!--"span"-inline code to style small parts of text, although <a> would also work -->
+
         </div>
     </div>
     <!-- Note:will add more styles here once the layout and business plan is complete kasi we can do a
