@@ -4,30 +4,87 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
-    <meta name="viewport" content='width=device-width, initial-scale=1'>
-    <style>
-        .footer {
-            clear: both;
-            background-color: black;
-            color: white;
-            height: 150px;
-            padding: 30px;
-        }
-        :hover.About div {
-            background-color: grey;
-        }
-    </style>
-</head>
-<body>
-    <div class = "footer">
-        <div>
-            footer
-        </div>
-        <div class="About">
-            About
-        </div>
-    </div>
-    <!-- Note:will add more styles here once the layout and business plan is complete kasi we can do a
-      layout where gamitin natin yung scc grid to divide the info like sa shakeys -->
-</body>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+   
+  <style>
+    .nav {
+      display: flex;
+      background-color: lime;
+      position: sticky;
+    }
+    .navbox {
+      padding: 25px;
+       margin: 10px
+    }
+    .navbox:hover {
+      background-color: white;
+    }
+    .navbox:last-child {
+      margin-left: auto;
+    }
+    .left {
+      background-color: grey;
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+      float: left;
+      margin: 10px;
+      align-items: center;
+    }
+    .main{
+      display: flex;
+      flex-direction: column;
+      width:72%;
+      background-color: grey;
+      margin: 10px;
+      align-items: center;
+    }
+    .left div {
+      height: 100px;
+      text-align: center;
+      background-color: blue;
+      width: 90%;
+      margin: 10px;
+    }
+    .main div {
+     height: 100px;
+      text-align: center;
+      background-color: blue;
+      width: 90%;
+      margin: 10px;
+    }
+  
+    </style> 
+  </head>
+  <body>
+   <div>
+     <div class="nav">
+        <div class="navbox">
+            <h2>Home</h2>
+          </div>
+        <div class="navbox">
+           <h2>Settings</h2>
+          </div>
+        <div class="navbox">
+           <h2>Help</h2>
+          </div>
+        <div class="navbox">
+           <h2>Profile</h2>
+          </div>
+        <div class="navbox">
+           <h2>Log Options</h2>
+          </div>
+     </div>
+   </div>
+   <div class="left">
+      <div>item 1</div>
+      <div>item 2</div>
+      <div>item 3</div>
+   </div>
+   <div class="main">
+      <div>item 1</div>
+      <div>item 2</div>
+      <div>item 3</div>
+   </div>
+  </body>
 </html>
