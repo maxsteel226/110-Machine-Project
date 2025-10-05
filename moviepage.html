@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temporary Content for website</title>
+    <style>
+        .drama, .action, .horror, .mystery, .romance {
+            clear: both;
+            background-color: black;
+            padding: 10px;
+            font-family: Georgia, serif;
+            font-size: large;
+            color: white;
+            display: grid;
+            grid-template-columns: repeat(6, 200px);
+            gap: 7px;
+        }
+        .drama-title, .action-title, .horror-title, .mystery-title, .romance-title
+        {
+            font-family: 'Georgia', sans-serif;
+            font-weight: bold;
+            font-size: 70px;
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+        .ham, .tak, .tsd, .tf, .des, .ch, .cm, .ds, .htyd, .jw, .kdh, .sm, .br, .desc, .os, .pw, .ta, .ikwydls, .lom, .rev, .thank,
+         .wat, .ias, .litbc, .on, .tpb, .wic
+         {
+            background-color: black;
+            padding: 5px;
+            text-align: center;
+        }
+        .compressed-text:hover
+        {
+            color: burlywood;
+        }
+        .ham div, .ham img, .tak div, .tak img, .tsd div, .tsd img, .tf div, .tf img, .des div, .des img
+        .ch div, .ch img, .cm div, .cm img, .ds div, .ds img, .htyd div, .htyd img, .jw div, .jw img,
+        .kdh div, .kdh img, .sm div, .sm img, .br div, .br img, .desc div, .desc img, .os div, .os img, .pw div, .pw img, .ta div,
+         .ta img, .ikwydls div, .ikwydls img, .lom div, .lom img, .rev div, .rev img, .thank div, .thank img, .wat div, 
+         .wat img, .ias div, .ias img, .litbc div, .litbc img, .on div, .on img, .tpb div, .tpb img, .wic div, .wic img
+        {
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+        .img-text-container {
+            width: 200px; /* match image width */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .compressed-text {
+            text-align: center;
+            white-space: nowrap; /* prevents text from wrapping to the next line */
+            width: 100%; /* ensures text wraps within container */
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .drama img, .action img, .horror img, .mystery img, .romance img {
+            width: 200px;
+            height: 250px;
+            object-fit: cover; /* ensures images fill the box without distortion */
+        }
+    </style>
+</head>
+<body>
+<div class="drama-title">Drama</div>
+<div class="drama">
+    <div class="ham">
+        <div class="img-text-container">
+            <img src="Movie Folder/Drama/hamilton.jpg" alt="Hamilton image">
+            <div class="compressed-text">Hamilton</div>
+        </div>
+    </div>
+    <div class="tak">
+        <div class="img-text-container">
+            <img src="Movie Folder/Drama/Takopis Original Sin.jpg" alt="tak image">
+            <div class="compressed-text">Takopi's Original Sin</div>
+        </div>
+    </div>
+    <div class="tsd">
+        <div class="img-text-container">
+            <img src="Movie Folder/Drama/The Sun in the Dark.jpg" alt="tsd image">
+            <div class="compressed-text">The Sun in the Dark</div>
+        </div>
+    </div>
+    <div class="tf">
+        <div class="img-text-container">
+            <img src="Movie Folder/Drama/Twin Fates.jpg" alt="tf image">
+            <div class="compressed-text">Twin Fates</div>
+        </div>
+    </div>
+    <div class="des">
+        <div class="img-text-container">
+            <img src="Movie Folder/Drama/When Destiny Brings The Demon.jpg" alt="des image">
+            <div class="compressed-text">When Destiny Brings The Demon</div>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="action-title">Action</div>
+    <div class="action">
+        <div class="ch">
+            <div class="img-text-container">
+                <img src="Movie Folder/Action/Captain Hook The Cursed Tides.jpg" alt="ch image">
+                <div class="compressed-text">Captain Hook The Cursed Tides</div>
+            </div>
+        </div>
+        <div class="cm">
+            <div class="img-text-container">
+                <img src="Movie Folder/Action/Chainsaw Man  The Movie Reze Arc.jpg" alt="cm image">
+                <div class="compressed-text">Chainsaw Man: The Movie Reze Arc</div>
+            </div>
+        </div>
+        <div class="ds">
+            <div class="img-text-container">
+                <img src="Movie Folder/Action/Demon Slayer Infinity Castle.jpg" alt="ds image">
+                <div class="compressed-text">Demon Slayer Infinity Castle</div>
+            </div>
+        </div>
+        <div class="htyd">
+            <div class="img-text-container">
+                <img src="Movie Folder/Action/HTTYD.jpg" alt="htyd image">
+                <div class="compressed-text">How To Train Your Dragon</div>
+            </div>
+        </div>
+        <div class="jw">
+            <div class="img-text-container">
+                <img src="Movie Folder/Action/Jurassic World Rebirth.jpg" alt="jw image">
+                <div class="compressed-text">Jurassic World Rebirth</div>
+            </div>
+        </div>
+        <div class="sm">
+            <div class="img-text-container">
+                <img src="Movie Folder/Action/SUPERMAN.jpg" alt="sm image">
+                <div class="compressed-text">Superman</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="horror-title">Horror</div>
+    <div class="horror">
+        <div class="br">
+            <div class="img-text-container">
+                <img src="Movie Folder/Horror/Bambi the reckoning.jpg" alt="br image">
+                <div class="compressed-text">Bambi the Reckoning</div>
+            </div>
+        </div>
+        <div class="desc">
+            <div class="img-text-container">
+                <img src="Movie Folder/Horror/Descendent.jpg" alt="desc image">
+                <div class="compressed-text">Descendent</div>
+            </div>
+        </div>
+        <div class="os">
+            <div class="img-text-container">
+                <img src="Movie Folder/Horror/Osiris.jpg" alt="os image">
+                <div class="compressed-text">Osiris</div>
+            </div>
+        </div>
+        <div class="pw">
+            <div class="img-text-container">
+                <img src="Movie Folder/Horror/Primitive War.jpg" alt="pw image">
+                <div class="compressed-text">Primitive War</div>
+            </div>
+        </div>
+        <div class="ta">
+            <div class="img-text-container">
+                <img src="Movie Folder/Horror/The Astronaut.jpg" alt="jw image">
+                <div class="compressed-text">The Astronaut</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="mystery-title">Mystery</div>
+    <div class="mystery">
+        <div class="ikwydls">
+            <div class="img-text-container">
+                <img src="Movie Folder/Mystery/ikwydls.jpg" alt="ikwydls image">
+                <div class="compressed-text">I Know What You Did Last Summer</div>
+            </div>
+        </div>
+        <div class="lom">
+            <div class="img-text-container">
+                <img src="Movie Folder/Mystery/Lord of Mysteries.jpg" alt="lom image">
+                <div class="compressed-text">Lord of Mysteries</div>
+            </div>
+        </div>
+        <div class="rev">
+            <div class="img-text-container">
+                <img src="Movie Folder/Mystery/Revelations.jpg" alt="rev image">
+                <div class="compressed-text">Revelations</div>
+            </div>
+        </div>
+        <div class="thank">
+            <div class="img-text-container">
+                <img src="Movie Folder/Mystery/thamk.jpg" alt="thamk image">
+                <div class="compressed-text">The Haunted Apartment "Miss K"</div>
+            </div>
+        </div>
+        <div class="wat">
+            <div class="img-text-container">
+                <img src="Movie Folder/Mystery/Watson.jpg" alt="wat image">
+                <div class="compressed-text">Watson</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="romance-title">Romance</div>
+    <div class="romance">
+        <div class="ias">
+            <div class="img-text-container">
+                <img src="Movie Folder/Romance/IAS.jpg" alt="ias image">
+                <div class="compressed-text">Insomniacs After School</div>
+            </div>
+        </div>
+        <div class="litbc">
+            <div class="img-text-container">
+                <img src="Movie Folder/Romance/LITBC.jpg" alt="litbc image">
+                <div class="compressed-text">Love In The Big City</div>
+            </div>
+        </div>
+        <div class="on">
+            <div class="img-text-container">
+                <img src="Movie Folder/Romance/Operation Nutcracker.jpg" alt="on image">
+                <div class="compressed-text">Operation Nutcracker</div>
+            </div>
+        </div>
+        <div class="tpb">
+            <div class="img-text-container">
+                <img src="Movie Folder/Romance/TPB.jpg" alt="tpb image">
+                <div class="compressed-text">The Princess Bride</div>
+            </div>
+        </div>
+        <div class="wic">
+            <div class="img-text-container">
+                <img src="Movie Folder/Romance/Wicked.jpg" alt="wic image">
+                <div class="compressed-text">Wicked</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="joke lang po ito">
+    <a href="https://">Joke!!</a>"
+</div>
+</body>
+</html>
