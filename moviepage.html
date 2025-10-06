@@ -2,9 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Temporary Content for website</title>
+    <title>Content for website</title>
     <style>
-        .drama, .action, .horror, .mystery, .romance {
+        .home-button {
+            background-color: black;
+            justify-items: center;
+            display: flex;
+            flex-direction: column;
+            height: 25px;
+            align-items: center;
+        }
+        .home-button a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            width: auto;
+        }
+        .home-button a:hover {
+            color: grey;
+            cursor: pointer;
+        }
+        .home-button h2 {
+            margin: 0;
+        }
+        .drama, .action, .horror, .mystery, .romance, .horror a, .comedy {
             clear: both;
             background-color: black;
             padding: 10px;
@@ -14,8 +35,9 @@
             display: grid;
             grid-template-columns: repeat(6, 200px);
             gap: 7px;
+            text-decoration: none;
         }
-        .drama-title, .action-title, .horror-title, .mystery-title, .romance-title
+        .drama-title, .action-title, .horror-title, .mystery-title, .romance-title, .comedy-title
         {
             font-family: 'Georgia', sans-serif;
             font-weight: bold;
@@ -25,13 +47,13 @@
             padding: 10px;
         }
         .ham, .tak, .tsd, .tf, .des, .ch, .cm, .ds, .htyd, .jw, .kdh, .sm, .br, .desc, .os, .pw, .ta, .ikwydls, .lom, .rev, .thank,
-         .wat, .ias, .litbc, .on, .tpb, .wic
+         .wat, .ias, .litbc, .on, .tpb, .wic, .nov, .sne, .mcm, .wc, .gb
          {
             background-color: black;
             padding: 5px;
             text-align: center;
         }
-        .compressed-text:hover
+        .compressed-text:hover, .joke a:hover
         {
             color: burlywood;
         }
@@ -39,7 +61,8 @@
         .ch div, .ch img, .cm div, .cm img, .ds div, .ds img, .htyd div, .htyd img, .jw div, .jw img,
         .kdh div, .kdh img, .sm div, .sm img, .br div, .br img, .desc div, .desc img, .os div, .os img, .pw div, .pw img, .ta div,
          .ta img, .ikwydls div, .ikwydls img, .lom div, .lom img, .rev div, .rev img, .thank div, .thank img, .wat div, 
-         .wat img, .ias div, .ias img, .litbc div, .litbc img, .on div, .on img, .tpb div, .tpb img, .wic div, .wic img
+         .wat img, .ias div, .ias img, .litbc div, .litbc img, .on div, .on img, .tpb div, .tpb img, .wic div, 
+         .wic img, .nov div, .nov img, .sne div, .sne img, .mcm div, .mcm img, .wc div, .wc img, .gb div, .gb img
         {
             cursor: pointer; /* Change cursor to pointer on hover */
         }
@@ -56,7 +79,7 @@
             overflow: hidden;
             text-overflow: ellipsis;
         }
-        .drama img, .action img, .horror img, .mystery img, .romance img {
+        .drama img, .action img, .horror img, .mystery img, .romance img, .comedy img {
             width: 200px;
             height: 250px;
             object-fit: cover; /* ensures images fill the box without distortion */
@@ -64,6 +87,11 @@
     </style>
 </head>
 <body>
+    <div class="home-button">
+    <a href="SALVADOR_SANGUEZA.html">
+       <h2>Home</h2>
+    </a>
+    </div>
 <div class="drama-title">Drama</div>
 <div class="drama">
     <div class="ham">
@@ -171,6 +199,10 @@
                 <div class="compressed-text">The Astronaut</div>
             </div>
         </div>
+        <div class="joke">
+            <a href="paasa.html">
+                Joke!!</a>
+        </div>
     </div>
 </div>
 <div>
@@ -243,8 +275,40 @@
         </div>
     </div>
 </div>
-<div class="joke lang po ito">
-    <a href="https://">Joke!!</a>"
+<div>
+    <div class="comedy-title">Comedy</div>
+    <div class="comedy">
+        <div class="nov">
+            <div class="img-text-container">
+                <img src="Movie Folder/Comedy/Novocaine.jpg" alt="nov image">
+                <div class="compressed-text">Novocaine</div>
+            </div>
+        </div>
+        <div class="sne">
+            <div class="img-text-container">
+                <img src="Movie Folder/Comedy/Sneaks.jpg" alt="sne image">
+                <div class="compressed-text">Sneaks</div>
+            </div>
+        </div>
+        <div class="mcm">
+            <div class="img-text-container">
+                <img src="Movie Folder/Comedy/A Minecraft Movie.jpg" alt="mcm image">
+                <div class="compressed-text">A Minecraft Movie</div>
+            </div>
+        </div>
+        <div class="wc">
+            <div class="img-text-container">
+                <img src="Movie Folder/Comedy/White Chicks.jpg" alt="wc image">
+                <div class="compressed-text">White Chicks</div>
+            </div>
+        </div>
+        <div class="gb">
+            <div class="img-text-container">
+                <img src="Movie Folder/Comedy/Good Boy.jpg" alt="gb image">
+                <div class="compressed-text">Good Boy</div>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>
