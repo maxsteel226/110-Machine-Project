@@ -232,10 +232,12 @@
 }
 .footer {
             background-color: rgb(161, 161, 161);
+            clear: both;
             padding: 20px;
             font-size: large;
             display: flex;
-            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
 }
 .about a {
     text-align: left;
@@ -253,6 +255,12 @@
     margin: 0;
     cursor: pointer;
     color: rgba(255, 255, 255, 0.562);
+}
+.about h2 {
+  font-size: xx-large;
+    height: 100px;
+    padding: 0;
+    margin: 0;
 }
 
   .supportButton:active {
@@ -344,8 +352,8 @@
         </a>
         <div><br><a href="#">Contact</a><br><a href="#">Terms of Service</a></div>
     </div> 
-    <div>
-        <img src="Movie Folder/Logo PNG.png" alt="logo" width="100px" height="auto">
+    <div class="logo2"> 
+        <img src="Movie Folder/Logo PNG.png" alt="logo" width="200px" height="auto">
     </div>
 </div>
   </body>
