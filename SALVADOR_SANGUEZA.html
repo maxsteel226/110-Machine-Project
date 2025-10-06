@@ -226,17 +226,28 @@
     display: flex;
     flex-direction: column;
 }
+.navbox a {
+    text-decoration: none;
+    color: black;
+}
+.footer {
+            background-color: rgb(161, 161, 161);
+            padding: 20px;
+            font-size: large;
+            display: flex;
+            flex-direction: column;
+}
 .about a {
     text-align: left;
     padding: 5px;
-    width: 20px;
+    width: auto;
     height:auto;
+    text-decoration: none;
+   color: black;
 }
 .about {
     text-align: left;
     padding: 5px;
-    width: 20px;
-    height:auto;
 }
 .about a:hover {
     margin: 0;
@@ -261,16 +272,19 @@
       <div class="navbox">
         <h2 tabindex="0">Genre</h2>
         <div class="dropdown">
-          <a href="#">Action</a>
-          <a href="#">Comedy</a>
-          <a href="#">Horror</a>
-          <a href="#">Romance</a>
-          <a href="#">Sci-Fi</a>
+          <a href="moviepage.html">Action</a>
+          <a href="moviepage.html">Comedy</a>
+          <a href="moviepage.html">Drama</a>
+          <a href="moviepage.html">Horor</a>
+          <a href="moviepage.html">Mystery</a>
+          <a href="moviepage.html">Romance</a>
         </div>
       </div>
     
       <div class="navbox">
+       <a href="moviepage.html">
         <h2 tabindex="0">Movies</h2>
+        </a>
       </div>
 
       <div class="navbox">
@@ -331,7 +345,7 @@
         <div><br><a href="#">Contact</a><br><a href="#">Terms of Service</a></div>
     </div> 
     <div>
-        <img src="/Movie Folder/" alt="logo" width="100px" height="auto">
+        <img src="Movie Folder/Logo PNG.png" alt="logo" width="100px" height="auto">
     </div>
 </div>
   </body>
