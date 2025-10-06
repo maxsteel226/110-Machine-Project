@@ -104,7 +104,7 @@
         box-shadow: 0 0 5px grey;
       }
 
-      .search-input {
+      .search-input, .about div {
         border: none;
         outline: none;
         padding: 8px;
@@ -128,6 +128,16 @@
       .search-button:hover {
         background-color: lightgrey;
       }
+      .navbox a, .footer a {
+        text-decoration: none;
+        color: black;
+      }
+     .footer{
+    background-color: rgb(161, 161, 161);
+    clear:both;
+    padding: 20px;
+    font-size: large;
+}
 
 
     </style>
@@ -141,16 +151,19 @@
       <div class="navbox">
         <h2 tabindex="0">Genre</h2>
         <div class="dropdown">
-          <a href="#">Action</a>
-          <a href="#">Comedy</a>
-          <a href="#">Horror</a>
-          <a href="#">Romance</a>
-          <a href="#">Sci-Fi</a>
+          <a href="moviepage.html">Action</a>
+          <a href="moviepage.html">Comedy</a>
+          <a href="moviepage.html">Drama</a>
+          <a href="moviepage.html">Horror</a>
+          <a href="moviepage.html">Mystery</a>
+          <a href="moviepage.html">Romance</a>
         </div>
       </div>
     
       <div class="navbox">
+        <a href="moviepage.html">
         <h2 tabindex="0">Movies</h2>
+        </a>
       </div>
 
       <div class="navbox">
@@ -167,5 +180,10 @@
          <button class="search-button"></button>
         </div>
     </div>
+<div class="footer">
+   <a href="paasa.html">
+    <div class="about">About</div>
+    </a> 
+</div>
   </body>
 </html>
