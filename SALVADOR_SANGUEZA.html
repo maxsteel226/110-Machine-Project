@@ -43,18 +43,31 @@
         border: 2px solid black;
         border-radius: 8px;
       }
-              
+      
+      .weblogo {
+        height: 100px;
+        width: auto;
+        border-radius: 8px;
+        display: block;
+      }
+      
+      .navlogo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+      }
+
       .dropdown {
         display: none;
         position: absolute;
         top: 100%;
         left: 0;
-        background-color: white;
+        background-color: lightgrey;
         border-radius: 10px;
         min-width: 150px;
-        box-shadow: 0 4px 8px grey;
-        z-index: 1000;
-        transition: opacity 0.5s ease-in-out;
+        z-index: 10;
+        transition: opacity 1s ease-in-out;
       }
 
       .dropdown a {
@@ -88,7 +101,7 @@
         display: block;
       }
       
-      .search-container {
+      .searchCon {
         display: flex;
         align-items: center;
         background-color: white;
@@ -96,15 +109,10 @@
         border-radius: 25px;
         padding: 5px 10px;
         margin-left: 20px;
-        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        transition: border-color 1s ease, box-shadow 0.3s ease;
       }
 
-      .search-container:focus-within {
-        border-color: black;
-        box-shadow: 0 0 5px grey;
-      }
-
-      .search-input, .about div {
+      .searchInp {
         border: none;
         outline: none;
         padding: 8px;
@@ -115,7 +123,7 @@
         width: 180px;
       }
 
-      .search-button {
+      .searchButt {
         background: none;
         border: none;
         font-size: 18px;
@@ -124,18 +132,96 @@
         border-radius: 50%;
         transition: background-color 0.2s ease;
       }
+
+      .intro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px; 
+        color: white;
+        margin-top: 80px;
+        padding: 40px 20px;
+        flex-wrap: wrap;
+      }
       
-      .search-button:hover {
-        background-color: lightgrey;
+      .introLogo {
+        width: 200px;
+        height: auto;
+        border-radius: 15px;
       }
-      .navbox a, .footer a {
-        text-decoration: none;
-        color: black;
+      
+      .intro p {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
       }
-     .footer{
-    background-color: rgb(161, 161, 161);
-    clear:both;
+      
+      .IntroText p {
+      font-size: 1.2rem;
+      color: silver;
+      max-width: 600px;
+      margin: 0;
+      text-align: left;
+      }
+      
+      .IntroText p:first-child {
+        font-size: 2.5rem;  
+        font-weight: bold; 
+        color: white;       
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+      }
+      
+      .BottomText {
+        text-align: center;
+        color: white;
+        margin-top: 20px;
+      }
+      
+      .BottomText p {
+        font-size: 1.5rem;
+        color: silver;
+      }
+      
+      .BottomText p:first-child {
+        font-weight: bold;
+        font-size: 2.5rem;
+        color: white;
+      }
+      
+      .support {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
     padding: 20px;
+    margin: 60px 100px;
+    color: white;
+    max-width: 700px;
+  }
+
+  .support p {
+    font-size: 1.2rem;
+    color: silver;
+    margin: 0;
+    flex: 1;
+  }
+
+  .supportButton {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+  }
+
+  .supportButton:hover {
+    background-color: darkblue;
+    transform: scale(1.05);
+  }
     font-size: large;
     display: flex;
     flex-direction: column;
@@ -158,31 +244,33 @@
     color: rgba(255, 255, 255, 0.562);
 }
 
+  .supportButton:active {
+    background-color: blue;
+    transform: scale(0.98);
+  }
 
     </style>
   </head>
   <body>
     <div class="nav">
       <div class="links">
-        <div class="navbox">
-          <h2 tabindex="0">Home</h2>
+       <div class="navlogo">
+        <img src="https://github.com/maxsteel226/110-Machine-Project/blob/main/Movie%20Folder/Logo%20PNG.png?raw=true" alt="Logo" class="weblogo">
         </div>
+        
       <div class="navbox">
         <h2 tabindex="0">Genre</h2>
         <div class="dropdown">
-          <a href="moviepage.html">Action</a>
-          <a href="moviepage.html">Comedy</a>
-          <a href="moviepage.html">Drama</a>
-          <a href="moviepage.html">Horror</a>
-          <a href="moviepage.html">Mystery</a>
-          <a href="moviepage.html">Romance</a>
+          <a href="#">Action</a>
+          <a href="#">Comedy</a>
+          <a href="#">Horror</a>
+          <a href="#">Romance</a>
+          <a href="#">Sci-Fi</a>
         </div>
       </div>
     
       <div class="navbox">
-        <a href="moviepage.html">
         <h2 tabindex="0">Movies</h2>
-        </a>
       </div>
 
       <div class="navbox">
@@ -194,10 +282,46 @@
       </div>
     </div>
     
-      <div class="search-container">
-        <input type="text" placeholder="Search..." class="search-input">
-         <button class="search-button"></button>
+      <div class="searchCon">
+        <input type="text" placeholder="Search..." class="searchInp">
+         <button class="searchButt"></button>
         </div>
+    </div>
+    
+    <div class="intro">
+      <img src="https://github.com/maxsteel226/110-Machine-Project/blob/main/Movie%20Folder/Logo%20Circle.png?raw=true" alt="Alternate Logo" class="introLogo">
+     
+      
+      <div class="IntroText">
+         <p>TVE</p>
+        <p>Movies? Series? or just looking for new hobbies?</p>
+        <p>We got it all for you~!</p>
+      </div>
+    </div>
+    
+      <div class="BottomText">
+        <p>What is TVE?</p>
+        <p>The Viewing Experience, is a non-profit organization 
+        that aims to provide quality experience for one's viewing 
+        pleasures whether online or offline</p>
+        
+        <p>Our goal is provide an experience that you not only enjoy but an experience
+        that you want to come back to over-and-over again. Our service provides a simple yet vast library
+        of shows and series that is always available anywhere anytime in anyplace (maybe)</p>
+        
+      <p>All shows and series are propery licensed (trust me bro) and are secured 
+      from each respective studios to guarantee you not only you watch new releases 
+      immedietely but also have the viewing experience comparable to already 
+      established streaming platforms</p>
+      </div>
+      
+      <div class="support">
+  <p> We are a small team (just two actually) of developers that help run and manage this
+    small operation — so if you'd like, please feel free to support our cause!</p>
+    
+  <a href="https://www.codashop.com/en-ph/mobile-legends" target="_blank" class="supportButton">
+    Support Us</a>
+      </div>
     </div>
 <div class="footer">
     <div class="about">
